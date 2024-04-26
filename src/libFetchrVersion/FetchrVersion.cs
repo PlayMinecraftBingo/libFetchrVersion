@@ -7,6 +7,7 @@
 		Fetchr501,
 		Fetchr51,
 		Fetchr511,
-		Fetchr512
+		Fetchr512,
+		Fetchr513
 	}
 }

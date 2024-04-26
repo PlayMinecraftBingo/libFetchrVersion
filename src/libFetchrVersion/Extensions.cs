@@ -13,6 +13,7 @@ namespace libFetchrVersion
 				FetchrVersion.Fetchr51 => "5.1",
 				FetchrVersion.Fetchr511 => "5.1.1",
 				FetchrVersion.Fetchr512 => "5.1.2",
+				FetchrVersion.Fetchr513 => "5.1.3",
 				_ => throw new NotImplementedException(),
 			};
 		}
