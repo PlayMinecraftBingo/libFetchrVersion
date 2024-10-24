@@ -1,4 +1,5 @@
-﻿using System;
+﻿using libMinecraftVersion;
+using System;
 
 namespace libFetchrVersion
 {
@@ -19,41 +20,41 @@ namespace libFetchrVersion
 			};
 		}
 
-        public static string ToVersionString(this MinecraftVersion version)
+        public static string ToVersionString(this FetchrMinecraftVersion version)
         {
             return version switch
             {
-                MinecraftVersion.Minecraft_1_16_5 => "1.16.5",
-                MinecraftVersion.Minecraft_1_20_2 => "1.20.2",
-                MinecraftVersion.Minecraft_1_20_6 => "1.20.6",
-                MinecraftVersion.Minecraft_1_21 => "1.21",
-                MinecraftVersion.Minecraft_1_21_1 => "1.21.1",
-                MinecraftVersion.Minecraft_1_21_2 => "1.21.2",
+                FetchrMinecraftVersion.Minecraft_1_16_5 => "1.16.5",
+                FetchrMinecraftVersion.Minecraft_1_20_2 => "1.20.2",
+                FetchrMinecraftVersion.Minecraft_1_20_6 => "1.20.6",
+                FetchrMinecraftVersion.Minecraft_1_21 => "1.21",
+                FetchrMinecraftVersion.Minecraft_1_21_1 => "1.21.1",
+                FetchrMinecraftVersion.Minecraft_1_21_2 => "1.21.2",
                 _ => throw new NotImplementedException(),
             };
         }
 
-        public static bool IsValidMinecraftVersion(this FetchrVersion version, MinecraftVersion minecraft)
+        public static bool IsValidMinecraftVersion(this FetchrVersion version, FetchrMinecraftVersion minecraft)
         {
             switch (version)
             {
                 case FetchrVersion.Unknown:
-                    if (minecraft== MinecraftVersion.Unknown) return true;
+                    if (minecraft== FetchrMinecraftVersion.Unknown) return true;
                     break;
                 case FetchrVersion.Fetchr_5_0:
                 case FetchrVersion.Fetchr_5_0_1:
-                    if (minecraft == MinecraftVersion.Minecraft_1_16_5) return true;
+                    if (minecraft == FetchrMinecraftVersion.Minecraft_1_16_5) return true;
                     break;
                 case FetchrVersion.Fetchr_5_1:
                 case FetchrVersion.Fetchr_5_1_1:
-                    if (minecraft == MinecraftVersion.Minecraft_1_20_2) return true;
+                    if (minecraft == FetchrMinecraftVersion.Minecraft_1_20_2) return true;
                     break;
                 case FetchrVersion.Fetchr_5_1_2:
                 case FetchrVersion.Fetchr_5_1_3:
-                    if ((minecraft >= MinecraftVersion.Minecraft_1_20_2) && (minecraft < MinecraftVersion.Minecraft_1_21)) return true;
+                    if ((minecraft >= FetchrMinecraftVersion.Minecraft_1_20_2) && (minecraft < FetchrMinecraftVersion.Minecraft_1_21)) return true;
                     break;
                 case FetchrVersion.Fetchr_5_1_4:
-                    if (minecraft >= MinecraftVersion.Minecraft_1_21) return true;
+                    if (minecraft >= FetchrMinecraftVersion.Minecraft_1_21) return true;
                     break;
             }
 

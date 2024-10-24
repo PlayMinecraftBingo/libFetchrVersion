@@ -1,13 +1,14 @@
-﻿using System;
+﻿using libMinecraftVersion;
+using System;
 
 namespace libFetchrVersion
 {
     public record FetchrVersionData
     {
         public FetchrVersion Fetchr { get; init; }
-        public MinecraftVersion Minecraft { get; init; }
+        public FetchrMinecraftVersion Minecraft { get; init; }
 
-        public FetchrVersionData(FetchrVersion fetchr, MinecraftVersion minecraft)
+        public FetchrVersionData(FetchrVersion fetchr, FetchrMinecraftVersion minecraft)
         {
             if (fetchr.IsValidMinecraftVersion(minecraft))
             {
@@ -22,15 +23,15 @@ namespace libFetchrVersion
 
         public FetchrVersionData(FetchrVersion fetchr)
         {
-            MinecraftVersion minecraft = fetchr switch
+            FetchrMinecraftVersion minecraft = fetchr switch
             {
-                FetchrVersion.Unknown => MinecraftVersion.Unknown,
-                FetchrVersion.Fetchr_5_0 => MinecraftVersion.Minecraft_1_16_5,
-                FetchrVersion.Fetchr_5_0_1 => MinecraftVersion.Minecraft_1_16_5,
-                FetchrVersion.Fetchr_5_1 => MinecraftVersion.Minecraft_1_20_2,
-                FetchrVersion.Fetchr_5_1_1 => MinecraftVersion.Minecraft_1_20_2,
-                FetchrVersion.Fetchr_5_1_2 => MinecraftVersion.Minecraft_1_20_6,
-                FetchrVersion.Fetchr_5_1_3 => MinecraftVersion.Minecraft_1_20_6,
+                FetchrVersion.Unknown => FetchrMinecraftVersion.Unknown,
+                FetchrVersion.Fetchr_5_0 => FetchrMinecraftVersion.Minecraft_1_16_5,
+                FetchrVersion.Fetchr_5_0_1 => FetchrMinecraftVersion.Minecraft_1_16_5,
+                FetchrVersion.Fetchr_5_1 => FetchrMinecraftVersion.Minecraft_1_20_2,
+                FetchrVersion.Fetchr_5_1_1 => FetchrMinecraftVersion.Minecraft_1_20_2,
+                FetchrVersion.Fetchr_5_1_2 => FetchrMinecraftVersion.Minecraft_1_20_6,
+                FetchrVersion.Fetchr_5_1_3 => FetchrMinecraftVersion.Minecraft_1_20_6,
                 _ => throw new ArgumentOutOfRangeException(nameof(fetchr), "Minecraft version must be specified for this Fetchr version.")
             };
 

@@ -9,11 +9,8 @@
     <RepositoryUrl>https://github.com/PlayMinecraftBingo/libFetchrVersion/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/PlayMinecraftBingo/libFetchrVersion/</PackageProjectUrl>
-    <PackageId>PlayMinecraftBingo.libFetchrVersion</PackageId>
-    <Product>libFetchrVersion</Product>
-    <Version>5.1.4.2</Version>
+    <PackageId>PlayMinecraftBingo.libMinecraftVersion</PackageId>
+    <Product>libMinecraftVersion</Product>
+    <Version>1.21.3</Version>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\libMinecraftVersion\libMinecraftVersion.csproj" />
-  </ItemGroup>
 </Project>
