@@ -11,6 +11,6 @@
     <PackageProjectUrl>https://github.com/PlayMinecraftBingo/libFetchrVersion/</PackageProjectUrl>
     <PackageId>PlayMinecraftBingo.libMinecraftVersion</PackageId>
     <Product>libMinecraftVersion</Product>
-    <Version>1.21.3</Version>
+    <Version>1.21.4</Version>
   </PropertyGroup>
 </Project>

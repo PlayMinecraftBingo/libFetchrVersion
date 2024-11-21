@@ -30,6 +30,8 @@ namespace libFetchrVersion
                 FetchrMinecraftVersion.Minecraft_1_21 => "1.21",
                 FetchrMinecraftVersion.Minecraft_1_21_1 => "1.21.1",
                 FetchrMinecraftVersion.Minecraft_1_21_2 => "1.21.2",
+                FetchrMinecraftVersion.Minecraft_1_21_3 => "1.21.3",
+                FetchrMinecraftVersion.Minecraft_1_21_4 => "1.21.4",
                 _ => throw new NotImplementedException(),
             };
         }

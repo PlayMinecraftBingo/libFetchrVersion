@@ -54,5 +54,11 @@ namespace libFetchrVersion.Tests
         {
             Assert.IsTrue(fetchr.IsValidMinecraftVersion(FetchrMinecraftVersion.Minecraft_1_21_3));
         }
+
+        [TestMethod]
+        public void Minecraft_1_21_4()
+        {
+            Assert.IsTrue(fetchr.IsValidMinecraftVersion(FetchrMinecraftVersion.Minecraft_1_21_4));
+        }
     }
 }

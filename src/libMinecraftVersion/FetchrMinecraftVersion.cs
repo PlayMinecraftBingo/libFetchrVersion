@@ -9,6 +9,7 @@
         Minecraft_1_21,
         Minecraft_1_21_1,
         Minecraft_1_21_2,
-        Minecraft_1_21_3
+        Minecraft_1_21_3,
+        Minecraft_1_21_4
     }
 }
