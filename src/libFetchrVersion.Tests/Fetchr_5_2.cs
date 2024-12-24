@@ -3,9 +3,9 @@ using libMinecraftVersion;
 namespace libFetchrVersion.Tests
 {
     [TestClass]
-    public class Fetchr_5_1_4
+    public class Fetchr_5_2
     {
-        private readonly FetchrVersion fetchr = FetchrVersion.Fetchr_5_1_4;
+        private readonly FetchrVersion fetchr = FetchrVersion.Fetchr_5_2;
 
         [TestMethod]
         public void Unknown()

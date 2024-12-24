@@ -15,7 +15,7 @@ namespace libFetchrVersion
 				FetchrVersion.Fetchr_5_1_1 => "5.1.1",
 				FetchrVersion.Fetchr_5_1_2 => "5.1.2",
                 FetchrVersion.Fetchr_5_1_3 => "5.1.3",
-                FetchrVersion.Fetchr_5_1_4 => "5.1.4",
+                FetchrVersion.Fetchr_5_2 => "5.2",
                 _ => throw new NotImplementedException(),
 			};
 		}
@@ -55,7 +55,7 @@ namespace libFetchrVersion
                 case FetchrVersion.Fetchr_5_1_3:
                     if ((minecraft >= FetchrMinecraftVersion.Minecraft_1_20_2) && (minecraft < FetchrMinecraftVersion.Minecraft_1_21)) return true;
                     break;
-                case FetchrVersion.Fetchr_5_1_4:
+                case FetchrVersion.Fetchr_5_2:
                     if (minecraft >= FetchrMinecraftVersion.Minecraft_1_21) return true;
                     break;
             }

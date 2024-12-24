@@ -9,6 +9,6 @@
 		Fetchr_5_1_1,
 		Fetchr_5_1_2,
 		Fetchr_5_1_3,
-		Fetchr_5_1_4
+		Fetchr_5_2
 	}
 }
