@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/PlayMinecraftBingo/libFetchrVersion/</PackageProjectUrl>
     <PackageId>PlayMinecraftBingo.libFetchrVersion</PackageId>
     <Product>libFetchrVersion</Product>
-    <Version>5.2.0.1</Version>
+    <Version>5.2.1.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\libMinecraftVersion\libMinecraftVersion.csproj" />
