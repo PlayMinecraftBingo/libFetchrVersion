@@ -58,5 +58,11 @@ namespace libFetchrVersion.Tests
         {
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => { _ = new libFetchrVersion.FetchrVersionData(FetchrVersion.Fetchr_5_2_1); });
         }
+
+        [TestMethod]
+        public void Fetchr_5_2_2()
+        {
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => { _ = new libFetchrVersion.FetchrVersionData(FetchrVersion.Fetchr_5_2_2); });
+        }
     }
 }
